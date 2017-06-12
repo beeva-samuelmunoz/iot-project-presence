@@ -50,7 +50,7 @@ end
 
 -- WiFi events
 function print_ip()
-  addr, nm, MQTT_BROKER_IP = wifi.sta.getip()
+  addr, nm, gw = wifi.sta.getip()
   print("[WIFI] GOTIP: "..addr)
   launch_program()
 end
